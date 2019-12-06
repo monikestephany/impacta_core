@@ -1,0 +1,12 @@
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.csproj.CoreCompileInputs.cache
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.AssemblyInfoInputs.cache
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.AssemblyInfo.cs
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.dll
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.pdb
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.deps.json
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.runtimeconfig.json
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.runtimeconfig.dev.json
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.dll
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.pdb
+C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.csprojAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\bin\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csprojAssemblyReference.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\obj\Debug\netcoreapp2.0\ConsoleApp.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\build.app\ConsoleApp.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\build.app\ConsoleApp.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\build.app\ConsoleApp.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\build.app\ConsoleApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto01\ConsoleApp\build.app\ConsoleApp.pdb

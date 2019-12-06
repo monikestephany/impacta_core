@@ -1,0 +1,16 @@
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\bin\Debug\netcoreapp2.0\MVCApp.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\bin\Debug\netcoreapp2.0\MVCApp.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\bin\Debug\netcoreapp2.0\MVCApp.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\bin\Debug\netcoreapp2.0\MVCApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\bin\Debug\netcoreapp2.0\MVCApp.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.csprojAssemblyReference.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.csproj.CoreCompileInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.AssemblyInfoInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.AssemblyInfo.cs
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\obj\Debug\netcoreapp2.0\MVCApp.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\build.app\MVCApp.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\build.app\MVCApp.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\build.app\MVCApp.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\build.app\MVCApp.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\Projeto02\MVCApp\build.app\MVCApp.pdb

@@ -1,0 +1,11 @@
+﻿@model Produto
+@{
+    ViewData["Title"] = "MostrarProduto";
+}
+
+<h2>MostrarProduto</h2>
+<div class="alert alert-success">
+    <span>Codigo :</span><strong>@Model.Codigo</strong>
+    <span>Descrição :</span><strong>@Model.Descricao</strong>
+    <span>Preço :</span><strong>@Model.Preco</strong>
+</div>
