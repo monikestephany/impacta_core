@@ -31,4 +31,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\dino-chrome.gif" />
+    <None Include="wwwroot\images\noimage.gif" />
+  </ItemGroup>
+
 </Project>

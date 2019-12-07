@@ -10,8 +10,7 @@ namespace DesenvolvimentoWeb.Projeto02.Models
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+       
         public DateTime Data { get; set; }
         public string Local { get; set; }
         public double Preco { get; set; }

@@ -10,3 +10,15 @@ C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\ne
 C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.dll
 C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.pdb
 C:\Monike\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.csprojAssemblyReference.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.csproj.CoreCompileInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.AssemblyInfoInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.AssemblyInfo.cs
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\Projeto03\DesenvolvimentoWeb.Projeto02\DesenvolvimentoWeb.Projeto02\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.Projeto02.csprojAssemblyReference.cache

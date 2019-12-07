@@ -1,0 +1,51 @@
+﻿@model DesenvolvimentoWeb.Projeto02.Models.Evento
+
+@{
+    ViewData["Title"] = "Exibir Detalhes";
+}
+
+
+<div>
+    <div class="text-center">
+        <img src="@Url.Action("BuscarFoto","Eventos",new { Model.Id })" style="width:100px" />
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Local)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Local)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Preco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MimeType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MimeType)
+        </dd>
+    </dl>
+</div>

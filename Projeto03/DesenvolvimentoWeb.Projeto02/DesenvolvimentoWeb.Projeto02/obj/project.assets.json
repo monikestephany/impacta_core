@@ -13266,11 +13266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Monike\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02.csproj",
+      "projectUniqueName": "C:\\Users\\no4710\\Documents\\Monike_AspNetCore\\impacta_core\\Projeto03\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02.csproj",
       "projectName": "DesenvolvimentoWeb.Projeto02",
-      "projectPath": "C:\\Monike\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02.csproj",
+      "projectPath": "C:\\Users\\no4710\\Documents\\Monike_AspNetCore\\impacta_core\\Projeto03\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02.csproj",
       "packagesPath": "C:\\Users\\no4710\\.nuget\\packages\\",
-      "outputPath": "C:\\Monike\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\obj\\",
+      "outputPath": "C:\\Users\\no4710\\Documents\\Monike_AspNetCore\\impacta_core\\Projeto03\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

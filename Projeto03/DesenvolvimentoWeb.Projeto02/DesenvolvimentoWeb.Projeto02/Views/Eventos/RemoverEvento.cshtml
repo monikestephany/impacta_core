@@ -1,0 +1,26 @@
+﻿@model DesenvolvimentoWeb.Projeto02.Models.Evento
+
+@{
+    ViewData["Title"] = "RemoverEvento";
+}
+
+<h2>Remover Evento</h2>
+<div>
+    <div class="text-center">
+        <img src="@Url.Action("BuscarFoto","Eventos",new { Model.Id })" style="width:100px" />
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+
+    <form asp-action="RemoverEvento">
+        <input type="submit" value="Deseja realmente remover" class="btn btn-danger" /> 
+        <a asp-action="ListarEventos" class="btn btn-default">Não,voltar para lista</a>
+    </form>
+</div>
