@@ -4,8 +4,16 @@
 }
 
 <h2>Gestão de Eventos - Escolha uma opção</h2>
-<ul>
-    <li><a asp-action="IncluirEventos">Incluir Novo Evento</a></li>
-    <li><a asp-action="ListarEventos">Listar Eventos</a></li>
-</ul>
 
+<ul>
+    <li>
+        <a asp-action="IncluirEvento" asp-controller="Eventos">
+            Incluir Novo Evento
+        </a>
+    </li>
+    <li>
+        <a asp-action="ListarEventos" asp-controller="Eventos">
+            Listar Eventos
+        </a>
+    </li>
+</ul>

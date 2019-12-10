@@ -10,7 +10,6 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "workingDirectory": "C:\\Users\\no4710\\Documents\\Monike_AspNetCore\\impacta_core\\Projeto03\\DesenvolvimentoWeb.Projeto02\\DesenvolvimentoWeb.Projeto02",
       "launchBrowser": true,
       "launchUrl": "http://localhost:49409/",
       "environmentVariables": {

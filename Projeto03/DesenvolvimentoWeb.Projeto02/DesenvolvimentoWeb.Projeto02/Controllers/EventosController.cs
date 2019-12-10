@@ -3,106 +3,111 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DesenvolvimentoWeb.Projeto02.Dados;
-using DesenvolvimentoWeb.Projeto02.Extensions;
 using DesenvolvimentoWeb.Projeto02.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DesenvolvimentoWeb.Projeto02.Controllers
 {
     public class EventosController : Controller
     {
-        public readonly EventosContext context;
+        private EventosDaoImpl EventosDao { get; set; }
 
+        //EventosContext é passado por injeção de dependencia
         public EventosController(EventosContext context)
         {
-            this.context = context;
+            this.EventosDao = new EventosDaoImpl(context);
         }
 
         public IActionResult Index()
         {
             return View();
         }
-        [HttpGet]
-        public IActionResult IncluirEventos()
-        {
-            string email = "monikestephany@gmail.com".ValidarEmail();
 
+        //Inclusão do evento
+        [HttpGet]
+        public IActionResult IncluirEvento()
+        {
             return View();
         }
+
         [HttpPost]
-        public IActionResult IncluirEventos(Evento evento,IFormFile foto)
+        public IActionResult IncluirEvento(Evento evento, IFormFile foto)
+        {
+            if(foto != null)
+            {
+                evento.Foto = foto.ToByteArray();
+                evento.MimeType = foto.ContentType;
+            }
+            EventosDao.ProcessarBD(evento, TipoOperacaoBD.Added);
+            return RedirectToAction("ListarEventos");
+        }
+
+        //Buscando a imagem
+        public FileResult BuscarFoto(int id)
+        {
+            var evento = EventosDao.BuscarPorId(id);
+            return File(evento.Foto, evento.MimeType);
+        }
+
+        //Listando os eventos
+        public IActionResult ListarEventos()
+        {
+            var lista = EventosDao.Listar();
+            return View(lista);
+        }
+
+        //Alterando o evento
+        [HttpGet]
+        public IActionResult AlterarEvento(int id)
+        {
+            return ExecutarEvento(id, "AlterarEvento");
+        }
+
+        [HttpPost]
+        public IActionResult AlterarEvento(Evento evento, IFormFile foto)
         {
             if (foto != null)
             {
                 evento.Foto = foto.ToByteArray();
                 evento.MimeType = foto.ContentType;
             }
-            context.Add<Evento>(evento);
-            context.SaveChanges();
-
+            EventosDao.ProcessarBD(evento, TipoOperacaoBD.Modified);
             return RedirectToAction("ListarEventos");
         }
-        public FileResult BuscarFoto(int id)
+
+        //exibindo os detalhes
+        public IActionResult VerDetalhes(int id)
         {
-            var evento = context.Eventos.FirstOrDefault(p => p.Id == id);
-            if (evento == null)
-                return File("~/images/noimage.gif", "image/gif");
-            return File(evento.Foto, evento.MimeType);
+            return ExecutarEvento(id, "VerDetalhes");
         }
-        public IActionResult ListarEventos()
-        {
-            var lista = context.Eventos.ToList();
-        
-            return View(lista);
-        }
+
+        //removendo um evento
         [HttpGet]
-        public IActionResult AlterarEvento(int id)
+        public IActionResult RemoverEvento(int id)
         {
-            if (id < 1)
+            return ExecutarEvento(id, "RemoverEvento");
+        }
+
+        //action HTTPGet Comum
+        private IActionResult ExecutarEvento(int id, string viewName)
+        {
+            var evento = EventosDao.BuscarPorId(id);
+
+            if (evento == null)
             {
                 ViewData["MensagemErro"] = "Nenhum evento encontrado";
                 return View("_Erro");
             }
-            var evento = context.Eventos.FirstOrDefault(p => p.Id == id);
-            
-            return View( evento);
+            return View(viewName, evento);
         }
+
         [HttpPost]
-        public IActionResult AlterarEvento(Evento evento,IFormFile foto)
+        public IActionResult RemoverEvento(Evento evento)
         {
-         
-            if (foto != null)
-            {
-                evento.Foto = foto.ToByteArray();
-                evento.MimeType = foto.ContentType;
-            }
-            context.Eventos.Update(evento);
-            context.SaveChanges();
-
-            return RedirectToAction("ListarEventos","Eventos");
-        }
-        [HttpGet]
-        public IActionResult RemoverEvento(int id)
-        {
-            var evento = context.Eventos.FirstOrDefault(p => p.Id == id);
-
-            return View(evento);
-        }
-        [HttpPost]
-        public IActionResult RemoverEvento(Evento evento, IFormFile foto)
-        {
-            context.Eventos.Remove(evento);
-            context.SaveChanges();
-
-            return RedirectToAction("ListarEventos", "Eventos");
-        }
-        [HttpGet]
-        public IActionResult DetalhesEvento(int id)
-        {
-            var evento = context.Eventos.FirstOrDefault(p => p.Id == id);
-
-            return View(evento);
+            EventosDao.ProcessarBD(evento, TipoOperacaoBD.Deleted);
+            return RedirectToAction("ListarEventos");
         }
     }
 }
