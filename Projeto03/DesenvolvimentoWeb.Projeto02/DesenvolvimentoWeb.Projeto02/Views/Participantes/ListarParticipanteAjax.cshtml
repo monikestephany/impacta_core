@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Listar Participantes";
+}
+
+<h2>Listar Participante Por Evento - Ajax</h2>
+
+<form asp-action="ListarParticipantesAjax" asp-controller="Eventos" method="get">
+    <div class="row">
+        <label class="control-label">Id Evento</label>
+        <select class="form-group" id="idEvento" name="IdEvento" asp-items="(SelectList)ViewBag.ListarEventos">
+            <option value="0">SELECIONE</option>
+        </select>
+    </div>
+</form>
+<div class="row" id="resultado"></div>
+
+@section Scripts{
+    <script>
+        $(document).ready(
+            function () {
+                $('#idEvento').change(function(){ 
+                    var selecao = $('#idEvento').val();
+                    if (selecao == "0") {
+                        var erro = "<div class='alert alert-danger'> Nenhum evento selecionado</div>";
+                        $('#resultado').html(erro);
+                    }
+                    else {
+                        $('#resultado').load("/Participantes/ListarParticipanteAjax?idEvento=" + selecao);
+                    }
+                });
+            });
+    </script>
+ }
+

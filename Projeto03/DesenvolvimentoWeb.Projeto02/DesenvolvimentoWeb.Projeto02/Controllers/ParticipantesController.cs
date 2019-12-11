@@ -56,5 +56,19 @@ namespace DesenvolvimentoWeb.Projeto02.Controllers
                 return RedirectToAction("Index");
             }
         }
+        public IActionResult ListarParticipanteAjax(int idEvento)
+        {
+            ViewBag.ListarEventos = new SelectList(EventosDao.Listar(), "Id", "Descricao");
+            if (idEvento == 0)
+            {
+                return View();
+            }
+            else
+            {
+               var list =  ParticipantesDao.ListarPorEvento(idEvento);
+
+                return PartialView("_ListarParticipantes", list);
+            }
+        }
     }
 }
