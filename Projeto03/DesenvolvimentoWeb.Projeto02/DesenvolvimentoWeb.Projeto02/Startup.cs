@@ -32,12 +32,30 @@ namespace DesenvolvimentoWeb.Projeto02
             services.AddDbContext<EventosContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("EventosConnection")));
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+            services.AddDbContext<UsuariosDbContext>(options =>
+                options.UseSqlServer(Configuration
+                .GetConnectionString("DefaultConnection")));
+
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>()
+            //    .AddDefaultTokenProviders();
+
+            services.AddIdentity<Usuario, IdentityRole>()
+                .AddEntityFrameworkStores<UsuariosDbContext>()
                 .AddDefaultTokenProviders();
+
+            //Após o AddIdentity, modificamos o caminho do login e 
+            //opcionalmente, do logout (Padrão: /Account/Login)
+            services.ConfigureApplicationCookie(options => 
+            {
+                options.LoginPath = "/Usuarios/Login";
+                options.LogoutPath = "/Usuarios/Logout";
+                options.AccessDeniedPath = "/Usuarios/AccessDenied";
+            });
+
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
@@ -46,7 +64,7 @@ namespace DesenvolvimentoWeb.Projeto02
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -69,6 +87,23 @@ namespace DesenvolvimentoWeb.Projeto02
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            CreateRoles(serviceProvider).Wait();
+        }
+        //Defini metodo parar incluir novos perfis(role)
+        private async Task CreateRoles(IServiceProvider serviceProvider)
+        {
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<Usuario>>();
+            string[] roleNames = { "ADMIN", "USER", "GUEST" };
+            IdentityResult result;
+            foreach (var item in roleNames)
+            {
+                var roleExists = await roleManager.RoleExistsAsync(item);
+                if (!roleExists)
+                {
+                    result = await roleManager.CreateAsync(new IdentityRole(item));
+                }
+            }
         }
     }
 }

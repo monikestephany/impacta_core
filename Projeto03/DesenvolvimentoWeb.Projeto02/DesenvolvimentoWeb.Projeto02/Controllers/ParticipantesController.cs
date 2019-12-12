@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DesenvolvimentoWeb.Projeto02.Dados;
-using DesenvolvimentoWeb.Projeto02.Extensions;
 using DesenvolvimentoWeb.Projeto02.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -25,50 +24,52 @@ namespace DesenvolvimentoWeb.Projeto02.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public IActionResult IncluirParticipante()
         {
-            ViewBag.ListarEventos = new SelectList(EventosDao.Listar(), "Id", "Descricao");
+            ViewBag.ListaDeEventos = new
+                SelectList(EventosDao.Listar(), "Id", "Descricao");
 
             return View();
         }
+
         [HttpPost]
         public IActionResult IncluirParticipante(Participante participante)
         {
-            if (participante.IdEvento == 0)
+            if(participante.IdEvento == 0)
             {
-                ModelState.AddModelError("IdEvento", "É necessario selecionar um evento!");
-                return IncluirParticipante();
+                ModelState.AddModelError("IdEvento", "Nenhum evento selecionado ");
             }
-            else if (!ModelState.IsValid)
-            {
-                return IncluirParticipante();
-            }
-            else if (!participante.Cpf.ValidarCPF())
-            {
-                ModelState.AddModelError("Cpf", "Cpf Inválido");
-                return IncluirParticipante();
-            }
-            else
-            {
-                ParticipantesDao.ProcessarBD(participante, TipoOperacaoBD.Added);
 
-                return RedirectToAction("Index");
+            if (!participante.Cpf.ValidarCPF())
+            {
+                ModelState.AddModelError("Cpf", "Cpf inválido");
             }
+
+            if (!ModelState.IsValid)
+            {
+                return IncluirParticipante();
+            }
+            ParticipantesDao.ProcessarBD(participante, TipoOperacaoBD.Added);
+            return RedirectToAction("Index");
         }
-        public IActionResult ListarParticipanteAjax(int idEvento)
+
+        public IActionResult ListarParticipantesAjax(int idEvento)
         {
-            ViewBag.ListarEventos = new SelectList(EventosDao.Listar(), "Id", "Descricao");
-            if (idEvento == 0)
+            ViewBag.ListaDeEventos = new
+                SelectList(EventosDao.Listar(), "Id", "Descricao");
+            
+            if(idEvento == 0)
             {
                 return View();
             }
             else
             {
-               var list =  ParticipantesDao.ListarPorEvento(idEvento);
-
-                return PartialView("_ListarParticipantes", list);
+                var lista = ParticipantesDao.ListarPorEvento(idEvento);
+                return PartialView("_ListarParticipantes", lista);
             }
+
         }
     }
 }

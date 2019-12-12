@@ -8,17 +8,19 @@ namespace DesenvolvimentoWeb.Projeto02.Dados
 {
     public class ParticipantesDaoImpl : Dao<Participante>
     {
-        public readonly EventosContext context;
+        private EventosContext Context { get; set; }
         public ParticipantesDaoImpl(EventosContext context)
             : base(context)
         {
-            this.context = context;
+            this.Context = context;
         }
 
+        //método para listar os participantes por evento
         public IEnumerable<Participante> ListarPorEvento(int idEvento)
         {
-            return context.Participantes.Where(p => p.IdEvento == idEvento).ToList();
+            return Context.Participantes
+                .Where(p => p.IdEvento == idEvento)
+                .ToList();
         }
-
     }
 }

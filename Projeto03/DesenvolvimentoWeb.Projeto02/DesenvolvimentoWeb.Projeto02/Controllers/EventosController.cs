@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DesenvolvimentoWeb.Projeto02.Dados;
 using DesenvolvimentoWeb.Projeto02.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace DesenvolvimentoWeb.Projeto02.Controllers
             this.EventosDao = new EventosDaoImpl(context);
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
@@ -27,6 +29,7 @@ namespace DesenvolvimentoWeb.Projeto02.Controllers
 
         //Inclusão do evento
         [HttpGet]
+        [Authorize(Roles ="ADMIN")]
         public IActionResult IncluirEvento()
         {
             return View();
