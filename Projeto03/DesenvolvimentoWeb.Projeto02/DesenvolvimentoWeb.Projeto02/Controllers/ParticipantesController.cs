@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using DesenvolvimentoWeb.Projeto02.Dados;
 using DesenvolvimentoWeb.Projeto02.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 
 namespace DesenvolvimentoWeb.Projeto02.Controllers
 {
@@ -71,5 +75,54 @@ namespace DesenvolvimentoWeb.Projeto02.Controllers
             }
 
         }
+        [HttpGet]
+        public IActionResult EfetuarPagamento(int id ,int idEvento)
+        {
+            var participante = ParticipantesDao.BuscarPorId(id);
+            var evento = EventosDao.BuscarPorId(idEvento);
+
+            PagamentoEvento pagamento = new PagamentoEvento {
+                Cpf = participante.Cpf,
+                IdEvento = idEvento,
+                Valor = evento.Preco,
+                Status = 1,
+                NumeroCartao = "11111111"
+            };
+            return View(pagamento);
+        }
+        [HttpPost]
+        public async Task<IActionResult> EfetuarPagamento(PagamentoEvento pagamento)
+        {
+            //a ser implementado
+            try
+            {
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("http://localhost:49728/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                string json = JsonConvert.SerializeObject(pagamento);
+
+                HttpContent content = new StringContent(json,
+                Encoding.Unicode, "application/json");
+                var response = await client.PostAsync("api/Pagamentos/IncluirPagamento",content);
+                if (response.IsSuccessStatusCode)
+                {                    
+                    return RedirectToAction("ListarParticipantes");
+                }
+                else
+                {
+                    string msg = response.StatusCode + " - " +
+                    response.ReasonPhrase;
+                  
+                    throw new Exception(msg);
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["MensagemErro"] = ex.Message;
+                return View("_Erro");
+            }
+        }
+
     }
 }

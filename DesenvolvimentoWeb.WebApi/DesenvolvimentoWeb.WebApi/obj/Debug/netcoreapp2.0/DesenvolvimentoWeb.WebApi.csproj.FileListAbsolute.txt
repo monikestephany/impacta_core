@@ -1,0 +1,11 @@
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.deps.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.runtimeconfig.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.runtimeconfig.dev.json
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\bin\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.pdb
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.csprojAssemblyReference.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.AssemblyInfoInputs.cache
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.AssemblyInfo.cs
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.dll
+C:\Users\no4710\Documents\Monike_AspNetCore\impacta_core\DesenvolvimentoWeb.WebApi\DesenvolvimentoWeb.WebApi\obj\Debug\netcoreapp2.0\DesenvolvimentoWeb.WebApi.pdb
